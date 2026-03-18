@@ -9,8 +9,6 @@ window.location.href = "dashboard.html";
 });
 }
 
-
-});
 /*
 FUNCIONALIDAD DEL CARRITO DE COMPRAS
 Este código permite agregar productos al carrito
@@ -67,13 +65,15 @@ localStorage.setItem("carrito", JSON.stringify(carrito));
 /*
 Actualiza el contador visual
 */
+  if (contadorCarrito){
 contadorCarrito.textContent = carrito.length;
-
+  }
 
 /*
 Mensaje simple para el usuario
 */
 alert(nombreProducto + " agregado al carrito");
+});
 
 });
 
